@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <!-- تعريف ترميز النص ليكون مناسبًا للغة العربية -->
+    <meta charset="UTF-8">
+    <!-- إعداد الصفحة لتكون متوافقة مع جميع الأجهزة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض صورتين متجاورتين</title>
+
+    <!-- أكواد CSS داخل وسم <style> للتحكم في تنسيق الصفحة -->
+    <style>
+        /* تنسيق الصفحة بالكامل: إزالة الهوامش والمساحات الافتراضية */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* يضمن عدم تأثير الحواف على الحجم */
+        }
+
+        /* حاوية عامة تحتوي على الصور */
+        .image-container {
+            width: 100%; /* الحاوية تأخذ عرض الشاشة بالكامل */
+            display: flex; /* استخدام flex لوضع العناصر بشكل أفقي أو عمودي */
+            flex-direction: column; /* ترتيب الصور بشكل عمودي */
+        }
+
+        /* تنسيق الصور داخل الحاوية */
+        .image-container img {
+            width: 100%; /* جعل الصورة تمتد على عرض الشاشة بالكامل */
+            height: auto; /* الحفاظ على تناسب الأبعاد */
+            display: block; /* إزالة المسافات البيضاء حول الصور */
+        }
+    </style>
+</head>
+<body>
+    <!-- حاوية الصور -->
+    <div class="image-container">
+        <!-- الصورة الأولى -->
+        <img src="SITE.png" >
+        
+<!-- رابط واتساب فوق الصورة الأولى -->
+<a href="https://wa.me/+212697559439" target="_blank" style="position: absolute; top: 90%; left: 60%; width: 100px; height: 50px; background-color: rgba(0, 255, 0, 0.3); text-decoration: none;"></a>
+        <!-- الصورة الثانية -->
+        <img src="site 1.png" >
+        
+<!-- رابط بايبال فوق الصورة الثانية -->
+<a href="https://paypal.me/FarikAS7375/10USD" target="_blank" style="position: absolute; top: 120%; left: 10%; width: 100px; height: 50px; background-color: rgba(0, 0, 255, 0.3); text-decoration: none;"></a>
+
+<div id="paypal-container-4LJ2Y3HPBVQDC"></div>
+
+
+    </div>
+</body>
+</html>
